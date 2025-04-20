@@ -7,7 +7,8 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "SWE & Designer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/giphy.gif",
+  avatarClickable: true,
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -23,7 +24,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "linkedin.com/in/sai-sindhu-rachapudi-50a51426a/",
+    link: "https://linkedin.com/in/sai-sindhu-rachapudi-50a51426a/",
   },
   {
     name: "Email",
