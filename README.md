@@ -1,4 +1,4 @@
-# **Build your portfolio with Once UI's Magic Portfolio**
+# **THis is my Portfolio**
 
 View the [demo here](https://demo.magic-portfolio.com).
 
