@@ -14,6 +14,7 @@ import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
+import { PassThrough } from "stream";
 
 export async function generateMetadata() {
   const title = about.title;
@@ -138,7 +139,7 @@ export default function About() {
             vertical="center"
             marginBottom="32"
           >
-            {about.calendar.display && (
+            {(
               <Flex
                 fitWidth
                 border="brand-alpha-medium"
@@ -156,7 +157,7 @@ export default function About() {
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
                 <Flex paddingX="8">Schedule a call</Flex>
                 <IconButton
-                  href={about.calendar.link}
+                  href={""}
                   data-border="rounded"
                   variant="secondary"
                   icon="chevronRight"

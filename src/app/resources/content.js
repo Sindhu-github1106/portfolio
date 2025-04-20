@@ -1,26 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "V. S. S.",
+  lastName: "Sindhu",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "SWE & Designer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
-};
-
-const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const social = [
@@ -29,22 +18,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Sindhu-github1106",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "linkedin.com/in/sai-sindhu-rachapudi-50a51426a/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:sindhu.rvsssb@gmail.com",
   },
 ];
 
@@ -52,11 +36,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>SWE & Designer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Sindhu, a CS student at <InlineCode>IIIT Delhi</InlineCode>, Welcome to my
+      <br /> portfolio. It's nice to meet you.
     </>
   ),
 };
@@ -72,37 +56,29 @@ const about = {
   avatar: {
     display: true,
   },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a Computer Science and Design student skilled in Python, Java, and C++ with a focus on AI, machine
+        learning, and data-driven decision-making. I've applied my expertise to projects like interactive simulations
+        and web applications. I can also solve a rubik's cube in less than a minute .
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Projects",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Angry Birds",
+        timeframe: "Aug,24 to Nov,24",
+        role: " Self-Directed",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed a 2D physics-based game using Java, libGDX, and Gradle with interactive sprites and collision
+            mechanics.
           </>,
         ],
         images: [
@@ -116,17 +92,25 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Astronomy Application",
+        timeframe: "Jan,23 to Feb,23",
+        role: " Guide: Mrs. Leena Kurian",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed an interactive solar system simulation with elliptical orbit visuals, educational content, and
+            database management using Tkinter and MySQL.
           </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Self Driving Robot",
+        timeframe: "Apr,22 to Jun,22",
+        role: " Guide: Mrs. Leena Kurian",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Designed an autonomous robotic vehicle for parkour navigation using Python and Scratch GUIs. Achieved
+            4th place at the World Robotics Olympiad Nationals 2022.
           </>,
         ],
         images: [],
@@ -138,12 +122,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Indraprastha Institute of Information Technology, Delhi",
+        description: <>Currently Majoring in Computer Science and Design.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Abu Dhabi Indian School",
+        description: <>High school Diploma.</>,
       },
     ],
   },
@@ -282,4 +266,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, blog, work, gallery };
