@@ -12,6 +12,10 @@ import { Source_Code_Pro } from "next/font/google";
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 
+import VinylPlayer from '@/components/VinylPlayer';
+import VisitorCounter from '@/components/VisiterCounter';
+
+
 export async function generateMetadata() {
   return {
     metadataBase: new URL(`https://${baseURL}`),
@@ -92,6 +96,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     >
       <ToastProvider>
         <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
+        <VinylPlayer />
+        <VisitorCounter />
           <Background
             mask={{
               cursor: effects.mask.cursor,

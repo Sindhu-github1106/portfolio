@@ -1,5 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
+// Add this audio player component at the top of your file
+const VinylPlayer = () => {
+  if (typeof window !== 'undefined') {
+    const audio = new Audio('/sounds/vinyl-scratch.mp3'); // You'll need to add this sound file
+    audio.volume = 0.3; // Lower volume so it's not too intrusive
+    audio.play().catch(e => console.log("Auto-play prevented:", e));
+  }
+  return null;
+};
+
 const person = {
   firstName: "V. S. S.",
   lastName: "Sindhu",
