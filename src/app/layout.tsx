@@ -97,7 +97,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <ToastProvider>
         <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
         <VinylPlayer />
-        <VisitorCounter />
+        {/*<VisitorCounter />*/}
           <Background
             mask={{
               cursor: effects.mask.cursor,
