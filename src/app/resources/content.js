@@ -39,7 +39,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:sindhu.rvsssb@gmail.com",
+    link: "mailto:venkata23589@iiitd.ac.in",
   },
 ];
 
@@ -72,8 +72,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I am a Computer Science and Design student skilled in Python, Java, and C++ with a focus on AI, machine
-        learning, and data-driven decision-making. I've applied my expertise to projects like interactive simulations
+        I am a Computer Science and Design student skilled in Python, Java, and C++ with a focus on UI/UX, AI,
+        machine learning. I've applied my expertise to projects like interactive simulations
         and web applications. I can also solve a rubik's cube in less than a minute .
       </>
     ),
@@ -83,7 +83,7 @@ const about = {
     title: "Projects",
     experiences: [
       {
-        company: "Angry Birds",
+        company: "Angry Birds Revised",
         timeframe: "Aug,24 to Nov,24",
         role: " Self-Directed",
         achievements: [
@@ -96,15 +96,15 @@ const about = {
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Astronomy Application",
-        timeframe: "Jan,23 to Feb,23",
+        company: "Anxiety Detection Wearable App",
+        timeframe: "Feb,25 to Apr,25",
         role: " Guide: Mrs. Leena Kurian",
         achievements: [
           <>
